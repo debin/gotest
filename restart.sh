@@ -2,6 +2,8 @@
 #默认进入的是登录用户的目录
 #cd test/bee
 # ps aux |grep hello | grep -v grep | awk '{print $2}' | xargs sudo kill -9
+
+cd `dirname $0`
 pidlist=`ps aux |grep hello | grep -v grep | awk '{print $2}'`
 if [ "$pidlist" = "" ]
 then
