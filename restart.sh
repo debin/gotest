@@ -9,11 +9,12 @@ then
 else
 for i in $pidlist
 do
-    echo "Kill the $1 process [ $i ]\n"
+    echo "Kill the $1 process [ $i ]"
     sudo kill -9 $i
 done
 fi
 
 sudo nohup ./hello 2>&1 &
-echo "hello start!\n"
+echo "hello is start!"
+echo
 
