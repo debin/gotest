@@ -3,8 +3,10 @@
 #cd test/bee
 # ps aux |grep hello | grep -v grep | awk '{print $2}' | xargs sudo kill -9
 
+appname = "hello"
+
 cd `dirname $0`
-pidlist=`ps aux |grep hello | grep -v grep | awk '{print $2}'`
+pidlist=`ps aux |grep $appname | grep -v grep | awk '{print $2}'`
 if [ "$pidlist" = "" ]
 then
     echo "no pid alive!"
@@ -16,7 +18,7 @@ do
 done
 fi
 
-sudo nohup ./hello 2>&1 &
-echo "hello is start!"
+sudo nohup ./$appname 2>&1 &
+echo "$appname is start!"
+echo `ps aux |grep $appname | grep -v grep`
 echo
-
