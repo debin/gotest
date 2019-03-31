@@ -1,7 +1,7 @@
 #! /bin/bash
 #默认进入的是登录用户的目录
 #cd test/bee
-ps aux |grep hello | grep -v grep | awk '{print $2}' | xargs sudo kill -9
+# ps aux |grep hello | grep -v grep | awk '{print $2}' | xargs sudo kill -9
 pidlist=`ps aux |grep hello | grep -v grep | awk '{print $2}'`
 if [ "$pidlist" = "" ]
 then
@@ -9,7 +9,7 @@ then
 else
 for i in $pidlist
 do
-    echo "Kill the $1 process [ $i ]"
+    echo "Kill the $1 process [ $i ]\n"
     sudo kill -9 $i
 done
 fi
