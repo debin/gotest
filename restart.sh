@@ -18,7 +18,7 @@ do
 done
 fi
 
-sudo nohup ./`$appname` 2>&1 &
+sudo nohup sh $appname 2>&1 &
 echo "$appname is start!"
-echo `ps aux |grep $appname | grep -v grep`
+ps aux |grep $appname | grep -v grep
 echo
