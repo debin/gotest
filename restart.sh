@@ -3,7 +3,7 @@
 #cd test/bee
 # ps aux |grep hello | grep -v grep | awk '{print $2}' | xargs sudo kill -9
 
-appname = "hello"
+appname="hello"
 
 cd `dirname $0`
 pidlist=`ps aux |grep $appname | grep -v grep | awk '{print $2}'`
