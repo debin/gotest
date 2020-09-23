@@ -4,17 +4,19 @@ go 1.12
 
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
-	github.com/antchfx/htmlquery v1.0.0 // indirect
+	github.com/antchfx/htmlquery v1.0.0
 	github.com/antchfx/xmlquery v1.0.0 // indirect
 	github.com/antchfx/xpath v1.0.0 // indirect
 	github.com/astaxie/beego v1.11.1
 	github.com/chromedp/chromedp v0.5.2
 	github.com/gin-gonic/gin v1.5.0
+	github.com/go-rod/rod v0.61.4
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gocolly/colly v1.2.0
 	github.com/gohouse/converter v0.0.3
 	github.com/gomodule/redigo v2.0.0+incompatible
+	github.com/guonaihong/clop v0.0.11
 	github.com/henrylee2cn/pholcus v1.3.2
 	github.com/henrylee2cn/pholcus_lib v0.0.0-20190908022230-83abeae89cb5 // indirect
 	github.com/jianfengye/collection v0.0.0-20190807085902-82190a147f56
