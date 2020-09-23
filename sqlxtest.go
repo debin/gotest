@@ -120,7 +120,7 @@ func main() {
 	//QueryRow(db)
 	//Insert(db)
 	Update(db)
-	Query(db)
+	Query(db,"")
 
 
 	fmt.Printf("user: %#v\n", user)
