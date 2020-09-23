@@ -32,12 +32,12 @@ type DoubanTopMovie struct {
 
 
 const (
-	HOST     = "qq10086.zhidaohu.com"
-	PORT     = 3307
-	USER     = "debin"
-	PASSWORD = "debin10086"
-	DBNAME   = "test"
-	SSLMODE  = "disable"
+	//HOST     = "qq10086.zhidaohu.com"
+	//PORT     = 3307
+	//USER     = "debin"
+	//PASSWORD = "debin10086"
+	//DBNAME   = "test"
+	//SSLMODE  = "disable"
 )
 
 func Query(db *sqlx.DB,title string) DoubanTopMovie{
