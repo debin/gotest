@@ -173,5 +173,5 @@ func main() {
 	})
 
 	// Start scraping on https://hackerspaces.org
-	c.Visit("http://s.zhidaohu.com/i")
+	c.Visit("https://s.zhidaohu.com/i")
 }

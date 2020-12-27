@@ -15,11 +15,17 @@ import (
 	"strings"
 	"sync"
 	"time"
+
 )
 
 var jobDone = make(chan bool, 1)
 
 func main() {
+	resp, err := http.Get("https://www.baidu.com")
+	defer resp.Body.Close()
+	body, err := ioutil.ReadAll(resp.Body)
+	fmt.Println(string(body))
+
 	size, err := GetMaxFileDescriptorSize()
 	queueCh := make(chan bool, size)
 	wg := sync.WaitGroup{}
