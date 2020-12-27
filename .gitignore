@@ -12,3 +12,12 @@
 *.out
 go.sum
 hello
+
+
+.idea
+.cover
+*.xlsx
+.*
+webhook
+/test/hookecho
+vendor
